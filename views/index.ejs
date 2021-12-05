@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paine de mensagens</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Paine de mensagens</h1>
+    
+    <form action="/index" method="POST" preventDefault="true">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="your name" required>
+        </div>
+    
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your email" required>
+        </div>
+    
+        <div class="textarea">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="your message" required></textarea>
+        </div>
+        <div>
+            <button type="submit" id="">send</button>
+        </div>
+    </form>
+
+</body>
+</html>
